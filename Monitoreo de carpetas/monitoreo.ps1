@@ -27,6 +27,9 @@
         
      -s: ruta del directorio utilizado por la acción “publicar”. Sólo es obligatorio si se envía
          “publicar” como acción en “-a”.
+
+    Para eliminar los monitoreos actuales ejecutar la siguiente linea de powershell:
+        Get-eventSubscriber | Unregister-Event     
 .PARAMETER Path
     El Script recibe los siguientes parametros:
      -c: ruta del directorio a monitorear. Se deben monitorear también dentro de los subdirectorios.
